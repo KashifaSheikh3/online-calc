@@ -1,13 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Calculator</title>
+    <title>My Calculator</title>
+    <style>
+        .calculator-container {
+            height: 510px;
+            width: 450px;
+            background-color: #333030;
+            border-radius: 14px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 120px;
+            box-shadow: 2px white solid;
+
+        }
+
+        .brand-name {
+            color: white;
+            margin-left: 15px;
+            display: block;
+            padding-top: 12px;
+            font-size: 20px;
+        }
+
+        .calc-screen {
+            width: 405px;
+            font-size: 50px;
+            height: 63px;
+            background-color: #c2c2a3;
+            margin-left: 18px;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .calc-button {
+            background-color: white;
+            height: 50px;
+            width: 65px;
+            font-size: 22px;
+            margin: 8px;
+            border-radius: 8px;
+            border: 2px solid #808080;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .calc-button:hover {
+            box-shadow: 0 2px 5px white;
+            transition: 0.3s;
+        }
+        .bg-red {
+            background-color:#9085b82c;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>My Calculator</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque dolor aliquid nisi quas atque et placeat! Eligendi architecto eos, nostrum autem at sapiente libero hic laudantium similique atque deleniti. Illo.git</p>
+    <div class="calculator-container">
+        <p class="brand-name">CASIO</p>
+        <input type="text" class="calc-screen">
+        <div class="button">
+            <button class="calc-button bg-red ">C </button>
+            <button class="calc-button bg-red ">CE </button>
+            <button class="calc-button"> M-</button>
+            <button class="calc-button"> M+</button>
+            <button class="calc-button">MRC </button>
+        </div>
+        <div class="button">
+            <button class="calc-button">7 </button>
+            <button class="calc-button">8</button>
+            <button class="calc-button"> 9</button>
+            <button class="calc-button"> %</button>
+            <button class="calc-button">√ </button>
+        </div>
+        <div class="button">
+            <button class="calc-button">4 </button>
+            <button class="calc-button">5 </button>
+            <button class="calc-button">6</button>
+            <button class="calc-button">*</button>
+            <button class="calc-button">÷ </button>
+        </div>
+        <div class="button">
+            <button class="calc-button">1 </button>
+            <button class="calc-button">2 </button>
+            <button class="calc-button">3</button>
+            <button class="calc-button">lock</button>
+            <button class="calc-button">-</button>
+        </div>
+        <div class="button">
+            <button class="calc-button">0</button>
+            <button class="calc-button">.</button>
+            <button class="calc-button"> +/-</button>
+            <button class="calc-button">_</button>
+            <button class="calc-button bg-red ">=</button>
+        </div>
+    </div>
+
 </body>
+
 </html>
